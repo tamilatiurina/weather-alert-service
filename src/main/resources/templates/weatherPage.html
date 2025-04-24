@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Display</title>
+    <link rel="stylesheet" href="/WeatherAlertService/src/main/resources/static/styles.css">
+</head>
+<body>
+<div class="weather-card">
+    <div th:if="${weather == null}">
+        <h3 class = "errorMessage" th:text="${errorMessage}"></h3>
+    </div>
+    <div th:if="${weather != null}">
+        <h1 class="city" th:text = "${city}">city</h1>
+        <div class="temperature" th:text = "${weather.temp} + '°C'">temp</div>
+        <div class="description" th:text = "${weather.sky}">sky</div>
+        <div class="humidity" th:text = "'Humidity: ' + ${weather.humidity} + '%'">humidity</div>
+    </div>
+</div>
+</body>
+</html>

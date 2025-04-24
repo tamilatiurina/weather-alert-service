@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top, #89f7fe, #66a6ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 60px 80px;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 400px;
+}
+
+
+.city {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.errorMessage {
+    font-size: 3.5em;
+    margin-bottom: 30px;
+}
+
+.temperature {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.humidity {
+    font-size: 1.5em;
+}
+
+.subscription-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 50px 60px;
+    border-radius: 25px;
+    text-align: left;
+    color: #fff;
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 400px;
+    max-width: 500px;
+}
+
+
+.subscription-card h1 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+.subscription-card label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.subscription-card input[type="email"],
+.subscription-card input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1em;
+}
+
+
+.ratio-label {
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.subscription-card input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+.subscription-card button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff55;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription-card button:hover {
+    background-color: #ffffff88;
+}
+
+
+.subscription-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+}
+
+.error-message {
+    color: #e74c3c; /* Bright red */
+    font-size: 0.9rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.error-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 60px 80px;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 400px;
+}
+
+.error-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+.error-message {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    padding: 12px 24px;
+    background-color: #ffffff55;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ffffff88;
+}

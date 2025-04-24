@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription form</title>
+    <link rel="stylesheet" href="/WeatherAlertService/src/main/resources/static/styles.css">
+</head>
+<body>
+<div class="subscription-card">
+    <h1>Subscribe for Weather Notifications</h1>
+    <form action="subscriptions" method="post">
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" th:value="${email}" required>
+        <p class="error-message" th:if="${emailError}" th:text="${emailError}"></p>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" th:value="${city}" required>
+        <p class="error-message" th:if="${cityError}" th:text="${cityError}"></p>
+
+        <p>Select notifications you'd like to receive:</p>
+        <label class="radio-label">
+            <input type="radio" name="fields" value="temperature" th:checked="${selectedField == 'temperature'}" required>
+            Temperature below 0°C
+        </label>
+        <label class="radio-label">
+            <input type="radio" name="fields" value="rain" th:checked="${selectedField == 'rain'}">
+            The rain is starting
+        </label>
+        <p class="error-message" th:if="${fieldsError}" th:text="${fieldsError}"></p>
+
+        <button type="submit">Submit Form</button>
+    </form>
+    <h3 th:text="${message}" class="subscription-message"></h3>
+</div>
+</body>
+</html>
